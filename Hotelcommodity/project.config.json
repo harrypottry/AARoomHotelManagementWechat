@@ -1,0 +1,232 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.4.0",
+	"appid": "wx3c70776ba55e7267",
+	"projectname": "%E5%B8%83%E8%8D%89%E7%AE%A1%E7%90%86",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 30,
+			"list": [
+				{
+					"id": -1,
+					"name": "获取布草",
+					"pathName": "pages/getClose/getClose",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "获取布草",
+					"pathName": "pages/getClothGrass/getClothGrass",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "pan-index测试",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "扫一扫开始任务",
+					"pathName": "pages/room_update/room_update",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "消耗品配置",
+					"pathName": "pages/consumables/consumables",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "布草配置更新",
+					"pathName": "pages/room_update/room_update",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "已领取列表",
+					"pathName": "pages/hasGetClothGrassList/hasGetClothGrassList",
+					"query": ""
+				},
+				{
+					"id": 7,
+					"name": "000",
+					"pathName": "pages/attendant/attendant",
+					"query": ""
+				},
+				{
+					"id": 9,
+					"name": "今日任务列表",
+					"pathName": "pages/todayTaskList/todayTaskList",
+					"query": "id=111"
+				},
+				{
+					"id": -1,
+					"name": "保洁BC合并页",
+					"pathName": "pages/attendant/attendant",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "main",
+					"pathName": "pages/main/main",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "hasGetClothGrassList",
+					"pathName": "pages/hasGetClothGrassList/hasGetClothGrassList",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "000",
+					"pathName": "pages/todayTaskList/todayTaskList",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "rp-B-2库存管理跳转页",
+					"pathName": "pages/stockControl/stockControl",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "新布草列表",
+					"pathName": "pages/new_linen/new_linen",
+					"query": "",
+					"scene": "1011"
+				},
+				{
+					"id": -1,
+					"name": "设置报损信息",
+					"pathName": "pages/breakageing/breakageing",
+					"query": "",
+					"scene": "1011"
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "main",
+					"pathName": "pages/main/main",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "toCoCloth000000",
+					"pathName": "pages/toCoCloth/toCoCloth",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "toCoCloth000000",
+					"pathName": "pages/toCoCloth/toCoCloth",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "hasCoCloth33333",
+					"pathName": "pages/hasCoCloth/hasCoCloth",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "/toCoCloth00000",
+					"pathName": "pages/toCoCloth/toCoCloth",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "todayTaskList",
+					"pathName": "pages/todayTaskList/todayTaskList",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "todayTaskList",
+					"pathName": "pages/todayTaskList/todayTaskList",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "todayTaskList",
+					"pathName": "pages/todayTaskList/todayTaskList",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "todayTaskList",
+					"pathName": "pages/todayTaskList/todayTaskList",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "todayTaskList",
+					"pathName": "pages/todayTaskList/todayTaskList",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "todayTaskList",
+					"pathName": "pages/todayTaskList/todayTaskList",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "checkClothGrass",
+					"pathName": "pages/checkClothGrassList/checkClothGrass"
+				}
+			]
+		}
+	}
+}

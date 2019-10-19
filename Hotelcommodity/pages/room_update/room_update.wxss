@@ -1,0 +1,49 @@
+/* pages/room_update/room_update.wxss */
+.roomswrapper{
+  padding:16rpx 18rpx;
+  line-height:52rpx;
+}
+.roomswrapper .roomnums{
+  font-size:40rpx;
+  font-weight:bold;
+  display:inline-block;
+  width:100%;
+}
+.roomswrapper .roomnums.active{
+  color:red;
+}
+.roomswrapper .taskinfo{
+  font-weight:bold;
+  display:inline-block;
+  width:100%;
+  font-size:34rpx;
+}
+.roomupdate_detail{
+  padding:10rpx 40rpx;
+}
+.update_detailtitle text{
+  font-weight:bold;
+  font-size:34rpx;
+}
+.update_detaillist{
+  line-height:50rpx;
+}
+.update_detaillisttwo{
+  width:49%;
+  display:inline-block;
+}
+.update_detaillisttwo text{
+  line-height:50rpx;
+}
+.right{
+  float:right;
+}
+.taskfinish{
+  text-align:center;
+  font-weight:bold;
+  font-size:46rpx;
+  padding:40rpx 0;
+  display:inline-block;
+  width:100%;
+  color:#838383;
+}

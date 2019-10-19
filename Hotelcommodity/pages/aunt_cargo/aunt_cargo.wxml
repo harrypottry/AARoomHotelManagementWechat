@@ -1,0 +1,21 @@
+<view class="newlinenmain">
+<view class="pagename">    
+  <text>{{pagename}}</text>     
+</view>
+<view class="tablemain">
+    <view class="tablelisttit row">
+      <text class='td1'>布草名称</text>
+      <text class='td1'>材质</text>
+      <text class='td2'>尺寸</text>
+      <text class='td2'>脏/干净/总数</text>
+    </view>
+    <view class="tablelistbody">
+      <view wx:for="{{standby}}" wx:key="{{index}}" class='row' data-data="{{index}}" data-name='{{item.Type}}' bindtap="BtnTo">
+        <text class='td1'>{{item.Type}}</text>
+        <text class='td1'>{{item.Material}}</text>
+        <text class='td2'>{{item.Size}}</text>
+        <text class='td2'>{{item.dirty||0}}/{{item.clean||0}}/{{item.all||0}}</text>        
+      </view>      
+    </view>    
+  </view>
+  </view>

@@ -1,0 +1,75 @@
+.container {
+  margin: 60rpx 80rpx 0;
+}
+.list {
+  display: flex;
+}
+.list .typeTitle {
+  font-weight: 900;
+}
+.list-msg {
+  margin-left: 20rpx;
+  padding: 0 20rpx;
+  font-size: 26rpx;
+  font-weight: 550;
+  background-color: #fff;
+  position: relative;
+}
+.list-msg2 {
+  height: 40rpx;
+  width: 140rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+}
+.list-msg2:after {
+  content: '▾';
+  width: 38rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  background: linear-gradient(to bottom right, #eee ,#ccc );
+  font-size: 40rpx;
+  position: absolute;
+  top: 2rpx;
+  right: 22rpx;
+  display: block;
+}
+.select_box {
+  background-color: #eee;
+  width: 144rpx;
+  position: absolute;
+  top: 44rpx;
+  z-index: 10;
+  overflow: hidden;
+}
+.select_one {
+  height: 60rpx;
+  line-height: 60rpx;
+  border: 1px solid #ccc;
+}
+.list-name {
+  margin-top: 100rpx;
+}
+.list-size {
+  margin-top: 60rpx;
+}
+.craft-container{
+  display: flex;
+ 
+}
+.attrCon1{
+  margin-top: 120rpx;
+}
+.attrCon2{
+  margin-top: 60rpx;
+  margin-bottom: 200rpx;
+}
+.list-attGroup2{
+  margin-left: 50rpx;
+}
+.list-time{
+  margin-top: 60rpx;
+  margin-bottom: 200rpx;
+}

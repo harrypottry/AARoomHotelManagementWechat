@@ -1,0 +1,43 @@
+<view class='login' wx:if="{{!isLogin}}">
+  <view class="login-input">
+      <label>手机：</label>
+    <input placeholder="账号" type="text" value="{{phone}}" bindinput="bindphone"></input>
+  </view>  
+  <view class="login-input">
+    <label>密码：</label>
+    <input type="password" value="{{pwd}}" bindinput="bindpwd"></input>	  	
+  </view>  
+  <view>
+    <button class="btn" bindtap="submitBtn">登录</button>
+  </view>
+</view>
+<view class='main' wx:if="{{job}}">
+  <!-- <view class='hotelname'>{{hotelname}}</view>   -->
+  <view wx:if="{{job==6}}"><!-- 保洁 -->    
+    <view>      
+      <button class="btn" bindtap="onoff">开始接受任务</button>
+    </view>
+    <view>
+      <button class="btn" data-url='../../pages/history_mission/history_mission' bindtap="BtnTo">历史任务</button>
+    </view>    
+  </view>
+  <view wx:if="{{job==5}}"><!-- 库管 -->
+    <view>
+      <button class="btn" data-url='../../pages/publicA134/publicA134' data-page='0' bindtap="BtnTo">新订布草</button>
+    </view>
+    <view>
+      <button class="btn" data-url='../../pages/stockControl/stockControl' bindtap="BtnTo">库存管理</button>
+    </view>
+    <view>
+      <button class="btn" data-url='../../pages/breakage/breakage' bindtap="BtnTo">报损</button>
+    </view>
+  </view>
+  <view wx:if="{{job==1}}"><!-- 业务 -->
+    <view>
+      <button class="btn" data-url='../../pages/toCoCloth/toCoCloth' bindtap="BtnTo" data-type="0">布草关联</button>
+    </view>
+    <view>
+      <button class="btn" data-url='../../pages/toCoCloth/toCoCloth' bindtap="BtnTo" data-type="1">已关联布草</button>
+    </view>    
+  </view>
+</view>

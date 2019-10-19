@@ -1,0 +1,58 @@
+/* pages/linen_allocation/linen_allocation.wxss */
+.roomswrapper{
+  padding:16rpx 18rpx;
+  line-height:52rpx;
+}
+.roomswrapper .roomnums{
+  font-size:40rpx;
+  font-weight:bold;
+  display:inline-block;
+  width:100%;
+}
+.roomswrapper .taskinfo{
+  font-weight:bold;
+  display:inline-block;
+  width:100%;
+  font-size:34rpx;
+}
+.allocationdetail{
+  margin:0 28rpx;
+}
+.detailtitle .titnums{
+  width:50rpx;
+  height:50rpx;
+  background:#249bd3;
+  border-radius:50rpx;
+  color:#fff;
+  display:inline-block;
+  text-align:center;
+  line-height:50rpx;
+  box-shadow:1px 2px 2px #838383;
+}
+.linentitword{
+  font-weight:bold;
+  font-size:34rpx;
+  margin-left:20rpx;
+}
+.allocationdetaillist{
+  display:inline-block;
+  line-height:2.55555556;
+  width:100%;
+  margin-bottom:20rpx;
+  margin-top:14rpx;
+}
+.linennums{
+  float:right;
+  margin-right:20rpx;
+}
+.scanbtn{
+  font-size:30rpx;
+  float:right;
+  display:inline-block;
+  color:#54C947;
+  background:none;
+  min-width:20%;
+}
+.scanbtn.active{
+  color:#333;
+}

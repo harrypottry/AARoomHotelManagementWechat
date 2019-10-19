@@ -1,0 +1,35 @@
+<!-- 备注信息 -->
+页面导航
+"pages/main/main",//rp-A：首页--含登录、业务、布草、保洁---"pages/login/login",//登录--暂未与openId绑定账号前需先登录
+"pages/attendant/attendant"//rp-BC：BC页面合并--保洁员页面
+"pages/history_mission/history_mission",//rp-D：历史任务
+<!-- rp-C 部分（保洁端） -->
+<!-- "pages/chooseClothGrass/chooseClothGrass", // rp-C：选择布草类型页 ---> 今日任务列表页、领取当前布草详情页、我的布草展示页，扫一扫领取布草功能 -->
+"pages/todayTaskList/todayTaskList", // rp-C1: 今日任务列表页
+"pages/hasGetClothGrassList/hasGetClothGrassList" // rp-C2: 领取当前布草详情页
+"pages/checkClothGrassList/checkClothGrass", // rp-C3: 我的布草展示页
+<!-- 业务端 -->
+"pages/toCoCloth/toCoCloth", // 选择关联布草属性+条件查询关联布草页面
+"pages/hasCoCloth/hasCoCloth", // 扫一扫关联布草+已关联布草页面
+<!-- 库管端 -->
+"pages/stockControl/stockControl", //rp-A-2库存管理跳转页
+"pages/refer/refer", //rp-A-5库存管理查询页
+"pages/breakage/breakage",, //rp-A-11已报损列表
+"pages/breakageing/breakageing", //rp-A-12设置报损信息
+"pages/publicA134/publicA134", //rp-A-1新订布草页、rp-A-3阿姨归库、洗衣厂归库、rp-A-4送洗
+"pages/publicA134/publicA67810", //rp-A-6库房单品详情、rp-A-7房间详情、rp-A-8洗衣厂单品详情、rp-A-10保洁个人单品详情
+"pages/aunt_cargo/aunt_cargo", //rp-A-9保洁详情
+
+苗苗
+<!-- "pages/task_list/task_list",//rp-B: 保洁-任务列表 -->
+"pages/room_update/room_update",//rp-B-1: 房间开始扫一扫任务
+"pages/linen_allocation/linen_allocation",//rp-B-2: 房间任务-布草配置
+"pages/consumables/consumables",//rp-B-3: 房间任务-消耗品配置
+亚萍
+
+盼盼
+app.js:共用get、post请求、共用提示
+11.23：
+苗苗--B、B-1、B-2、B-3
+亚萍--C、C-1、C-2、C-3
+盼盼--A、仿写tabBar、登录判断

@@ -1,0 +1,52 @@
+.newlinenmain{
+  padding-bottom:50px;
+}
+.pagename{
+  font-size:34rpx;
+  color:#000;
+  padding:15px;
+  border-bottom:1rpx dashed #838383;
+  min-height:50rpx;
+}
+.tablemain {
+  margin:0 10rpx;
+}
+.tablelisttit{
+  width:100%;
+  line-height:88rpx;
+  display:flex;
+}
+.tablelisttit text{
+  width:33.3%;
+  display:inline-block;
+  text-align:center;
+}
+.tablelist{
+  padding:12rpx 0;
+  margin-bottom:16rpx;
+  line-height:80rpx;
+  display:flex;
+}
+.tablelist text{
+  width:33.3%;
+  display:inline-block;
+  text-align:center;
+  vertical-align:middle;
+  line-height:40rpx;
+}
+.storagemain{
+  position:fixed;
+  bottom:10px;
+  left:0;
+  width:100%;
+}
+.storagemain text{
+  display:inline-block;
+  line-height:40px;
+  padding-left:20px;
+}
+.storagemain button{
+  float:right;
+  margin-top:0;
+  margin-right:10px;
+}

@@ -1,0 +1,20 @@
+<view class="pagename">    
+  <text>已报损列表</text>
+  <button class="ringout" bindtap="add">添加新报损</button>       
+</view>
+<scroll-view scroll-x style="width:100%">
+  <view class="row">
+    <text class='td1'>布草名称</text>      
+    <text class='td1'>尺寸</text>
+    <text class='td1'>Id</text>
+    <text class='td2'>日期</text>
+    <text class='td1'>备注</text>
+  </view>
+  <view wx:for="{{warelist}}" wx:key="{{index}}" class='row'>
+    <text class='td1'>{{item.clothView.Type}}</text>
+    <text class='td1'>{{item.clothView.Size}}</text>
+    <text class='td1'>{{item.clothError.cloth_id}}</text>
+    <text class='td2'>{{item.clothError.create_time}}</text>
+    <text class='td1'>{{item.clothError.comment}}</text>        
+  </view>
+</scroll-view>

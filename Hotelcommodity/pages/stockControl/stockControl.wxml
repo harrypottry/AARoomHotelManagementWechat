@@ -1,0 +1,14 @@
+<view><!-- 库存管理 -->
+    <view>
+      <button class="btn" data-url='../../pages/publicA134/publicA134' data-page='1' bindtap="BtnTo">阿姨归库</button>
+    </view>
+    <view>
+      <button class="btn" data-url='../../pages/publicA134/publicA134' data-page='2' bindtap="BtnTo">洗衣厂归库</button>
+    </view>
+    <view>
+      <button class="btn" data-url='../../pages/publicA134/publicA134' data-page='3' bindtap="BtnTo">送洗</button>
+    </view>
+    <view>
+      <button class="btn" data-url='../../pages/refer/refer' bindtap="BtnTo">查询</button>
+    </view>
+  </view>

@@ -1,0 +1,32 @@
+<view class="task-container">
+    <view class="title">
+        <text>选择</text><text>房间</text><text>房间属性</text><text>任务属性</text><text>任务状态</text>
+    </view>
+    <view class="taskList">
+        <checkbox-group bindchange="bindchange" data-index='{{index}}'>
+            <label class="checkbox" wx:for="{{todayTaskList}}" wx:key="key" hover-class="active-checkbox">
+                <view>
+                    <checkbox value="{{item.room_id}}" checked="{{item.checked}}" />
+                </view>
+                <view>
+                    <text>{{item.room_name}}</text>
+                </view>
+                <view>
+                    <text>{{item.room_type_desc}}</text>
+                </view>
+                <view wx:if="{{item.apartAttibute.length==2}}" class="apartAttibute1">
+                    <view>{{item.apartAttibute[0]}}</view>
+                    <view>{{item.apartAttibute[1]}}</view>
+                </view>
+                <view wx:if="{{item.apartAttibute.length==1}}" class="apartAttibute2">
+                    <view>{{item.apartAttibute[0]}}</view>
+                </view>
+                <view>
+                    <text wx:if='{{item.status == 0}}'>发布</text>
+                    <text wx:if='{{item.status == 1}}'>工作中</text>
+                </view>
+            </label>
+        </checkbox-group>
+    </view>
+</view>
+<view class="getClothGrassBtn" bindtap='getClothGrass'>领取布草</view>

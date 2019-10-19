@@ -1,0 +1,14 @@
+.main{
+  margin-bottom:50px;
+}
+.blue{
+  color:#249bd3;
+}
+.tablelist{
+  border:1rpx solid #838383;
+  padding:12rpx 0;
+  margin-bottom:16rpx;  
+}
+.is_checked{
+  background:#bfe3f1;
+}

@@ -1,0 +1,61 @@
+<view class="pagename"><text>此次已领取列表</text></view>
+<scroll-view scroll-x="true" class='scrollClass'>  
+    <view class='table'>
+        <view class='table_header'>
+            <view class="th widthPub1">
+                <view class='centerclass'>布草名称</view>
+            </view>
+            <block>
+                <view class='th widthPub2'>
+                    <view>规格</view>
+                </view>
+            </block>
+            <block>
+                <view class='th widthPub3'>
+                    <view>材质</view>
+                </view>
+            </block>
+            <block>
+                <view class='th widthPub4'>
+                    <view>已领取数量</view>
+                </view>
+            </block>
+            <block>
+                <view class='th widthPub5 borderPub1'>
+                    <view>建议领取数量</view>
+                </view>
+            </block>
+        </view>
+        <block >
+            <view class='table_main' wx:for="{{itemList}}" wx:key="{{index}}" data-data="{{index}}">
+                <view class='td widthPub1'>
+                    <block>
+                        <view>{{item.Type}}</view>
+                    </block>
+                </view>
+                <view class='td widthPub2'>
+                    <block>
+                        <view>{{item.Size}}</view>
+                    </block>
+                </view>
+                <view class='td widthPub3'>
+                    <block>
+                        <view>{{item.Material}}</view>
+                    </block>
+                </view>
+                <view class='td  widthPub4'>
+                    <block>
+                        <view>{{item.nums}}</view>
+                    </block>
+                </view>
+                <view class='td  widthPub5 borderPub1'>
+                    <block>
+                        <view>{{item.num}}</view>
+                    </block>
+                </view>
+            </view>
+        </block>
+    </view>
+</scroll-view>
+<view class="btn" bindtap="scanToGetClothGrass">扫一扫继续领取布草</view>
+<view class="btn" bindtap="toHomePage">完成领取返回首页</view>

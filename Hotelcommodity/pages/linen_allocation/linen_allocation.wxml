@@ -1,0 +1,20 @@
+<view class="allocationmain">
+  <view class="roomswrapper">
+    <text class="roomnums">{{room_name}}房间</text>
+    <text class="taskinfo">{{mission_desc}}</text>
+  </view>
+  <view class="allocationdetail">
+    <view class="detailtitle">
+      <text class="titnums">1</text>
+      <text class="linentitword">布草配置</text>
+    </view>
+    <view class="allocationdetailmain">
+      <view class="allocationdetaillist" wx:for="{{roomData}}" wx:key="{{index}}">
+        <text class="linennumber">{{item.Type}}：{{item.Material}} {{item.Size}}</text>
+        <text class="scanbtn" wx-if="{{item.nums<item.num}}" data-index='{{index}}' data-id='{{item.id}}' bindtap='scanbtn'>扫一扫配置</text>
+        <text class="scanbtn active" wx-if="{{item.nums==item.num}}">配置完成</text>
+        <text class="linennums" data-index="{{index}}">{{item.nums}}/{{item.num}}</text>
+      </view>      
+    </view>
+  </view>
+</view>

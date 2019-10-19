@@ -1,0 +1,69 @@
+<view class="newlinenmain">
+<view class="pagename">    
+  <text>{{pagename}}</text>     
+</view>
+<view wx:if="{{pageId=='2'}}"><!--2:库房子页-->
+  <view class="tablemain">
+      <view class="row">
+        <text class='td1'>布草ID</text>
+        <text class='td1'>洁净状态</text>
+        <text class='td1'>流转次数</text>
+      </view>
+      <view class="tablelistbody"> 
+        <view class="row" wx:for="{{standby}}" wx:key="{{index}}">
+          <text class='td1'>{{item.id}}</text>
+          <text class='td1'><text wx:if="{{item.status=='0'}}">干净</text><text wx:if="{{item.status=='1'}}">脏</text></text>
+          <text class='td1'>{{item.recycle_num}}</text>
+        </view>
+      </view>
+  </view>
+</view>
+
+<view wx:if="{{pageId=='0'}}"><!--0:房间子页-->
+  <view class="tablemain">
+      <view class="row">
+        <text class='td1'>布草名称</text>
+        <text class='td1'>材质</text>
+        <text class='td1'>尺寸</text>        
+      </view>
+      <view class="tablelistbody">
+        <view class="row" wx:for="{{standby}}" wx:key="{{index}}">
+          <text class='td1'>{{item.Type}}</text>
+          <text class='td1'>{{item.Material}}</text>
+          <text class='td1'>{{item.Size}}</text>                   
+        </view>
+      </view>
+  </view>
+</view>
+
+<view wx:if="{{pageId=='3'}}"><!--3:洗衣厂子页-->
+  <view class="tablemain">
+      <view class="row">
+        <text class='td1'>布草ID</text>
+        <text class='td1'>送洗时间</text>               
+      </view>
+      <view class="tablelistbody">
+        <view class="row" wx:for="{{standby}}" wx:key="{{index}}">
+          <text class='td1'>{{item.id}}</text>
+          <text class='td1'>{{item.update_time}}</text>                  
+        </view>
+      </view>
+  </view>
+</view>
+
+<view wx:if="{{pageId=='1'}}"><!--1:保洁子页A10-->
+  <view class="tablemain">
+      <view class="row">
+        <text class='td1'>布草ID</text>
+        <text class='td1'>领取时间</text>              
+      </view>
+      <view class="tablelistbody">
+        <view class="row" wx:for="{{standby}}" wx:key="{{index}}">
+          <text class='td1'>{{item.id}}</text>
+          <text class='td1'>{{item.update_time}}</text>                  
+        </view>
+      </view>
+  </view>
+</view>
+
+</view>

@@ -1,0 +1,88 @@
+<view class="newlinenmain">
+<view class="pagename">    
+  <text>{{pagename}}</text>     
+</view>
+<view wx:if="{{pageId=='new_linen'}}"><!--0:新订布草页-->
+  <view class="tablemain">
+      <view class="row">
+        <text class='td1'>布草名称</text>
+        <text class='td1'>尺寸</text>
+        <text class='td1'>数量</text>
+      </view>
+      <view class="tablelistbody"> 
+        <view class="row" wx:for="{{standby}}" wx:key="{{index}}">
+          <text class='td1'>{{item.Type}}</text>
+          <text class='td1'>{{item.Size}}</text>
+          <text class='td1'>{{item.num}}</text>
+        </view>
+      </view>
+  </view>
+</view>
+
+<view wx:if="{{pageId=='aunt_return'}}"><!--1:阿姨归库页-->
+  <view class="tablemain">
+      <view class="row">
+        <text class='td1'>布草名称</text>
+        <text class='td1'>材质</text>
+        <text class='td1'>尺寸</text>
+        <text class='td1'>数量</text>
+        <text class='td1'>洁净状态</text>
+      </view>
+      <view class="tablelistbody">
+        <view class="row" wx:for="{{standby}}" wx:key="{{index}}">
+          <text class='td1'>{{item.Type}}</text>
+          <text class='td1'>{{item.Material}}</text>
+          <text class='td1'>{{item.Size}}</text>
+          <text class='td1'>{{item.num}}</text>
+          <text class='td1'><text wx:if="{{item.status=='0'}}">干净</text><text wx:if="{{item.status=='1'}}">脏</text></text>          
+        </view>
+      </view>
+  </view>
+</view>
+
+<view wx:if="{{pageId=='wash_return'}}"><!--2:洗衣厂归库页-->
+  <view class="tablemain">
+      <view class="row">
+        <text class='td1'>布草名称</text>
+        <text class='td1'>材质</text>
+        <text class='td1'>尺寸</text>
+        <text class='td1'>数量</text>        
+      </view>
+      <view class="tablelistbody">
+        <view class="row" wx:for="{{standby}}" wx:key="{{index}}">
+          <text class='td1'>{{item.Type}}</text>
+          <text class='td1'>{{item.Material}}</text>
+          <text class='td1'>{{item.Size}}</text>
+          <text class='td1'>{{item.num}}</text>         
+        </view>
+      </view>
+  </view>
+</view>
+
+<view wx:if="{{pageId=='send_wash'}}"><!--3:送洗页-->
+  <view class="tablemain">
+      <view class="row">
+        <text class='td1'>布草名称</text>
+        <text class='td1'>材质</text>
+        <text class='td1'>尺寸</text>
+        <text class='td1'>数量</text>        
+      </view>
+      <view class="tablelistbody">
+        <view class="row" wx:for="{{standby}}" wx:key="{{index}}">
+          <text class='td1'>{{item.Type}}</text>
+          <text class='td1'>{{item.Material}}</text>
+          <text class='td1'>{{item.Size}}</text>
+          <text class='td1'>{{item.num}}</text>         
+        </view>
+      </view>
+  </view>
+</view>
+
+<view>
+    <button class="btn" bindtap="scanruku">扫一扫新增</button>
+</view>
+</view>
+<view class="storagemain">
+  <text>总计：{{num}}件</text>
+  <button class="btn" bindtap="affirmBtn">确认{{affirmbtn}}</button>
+</view>

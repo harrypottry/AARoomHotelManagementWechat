@@ -1,0 +1,66 @@
+<view class='main'>   
+  <view class="tablemain" wx:if="{{page=='warehouse'}}"><!--库房-->  
+    <view class="tablelisttit row">
+      <text class='td1'>布草名称</text>
+      <text class='td1'>材质</text>
+      <text class='td2'>尺寸</text>
+      <text class='td2'>脏/干净/总数</text>
+    </view>
+    <view class="tablelistbody">
+      <view wx:for="{{warehouse}}" wx:key="{{index}}" class='row' data-id='2' data-data="{{index}}" data-name='{{item.Type}} {{item.Material}} {{item.Size}}' data-url='../../pages/publicA67810/publicA67810' bindtap="BtnTo">
+        <text class='td1'>{{item.Type}}</text>
+        <text class='td1'>{{item.Material}}</text>
+        <text class='td2'>{{item.Size}}</text>
+        <text class='td2'>{{item.dirty||0}}/{{item.clean||0}}/{{item.all||0}}</text>        
+      </view>      
+    </view>    
+  </view>
+  <view class="tablemain" wx:if="{{page=='room'}}"><!--房间-->  
+    <view class="tablelisttit row">
+      <text class='td1'>房间</text>
+      <text class='td1'>数量（总数）</text>
+      <text class='td1'>洁净状态</text>      
+    </view>
+    <view class="tablelistbody">
+      <view wx:for="{{room}}" wx:key="{{index}}" class='row' data-id='0' data-name='{{item.room_name}} 房间' data-data='{{item.room_name}}' data-url='../../pages/publicA67810/publicA67810' bindtap="BtnTo">
+        <text class='td1'>{{item.room_name}}</text>
+        <text class='td1'>{{item.num}}</text>
+        <text class='td1'>{{item.status}}</text>                
+      </view>      
+    </view>    
+  </view>
+  <view class="tablemain" wx:if="{{page=='factory'}}"><!--洗衣厂-->  
+    <view class="tablelisttit row">
+      <text class='td1'>布草名称</text>
+      <text class='td1'>材质</text>
+      <text class='td1'>尺寸</text>
+      <text class='td1'>数量</text>    
+    </view>
+    <view class="tablelistbody">
+      <view wx:for="{{factory}}" wx:key="{{index}}" class='row' data-id='3' data-data='{{index}}' data-name='{{item.Type}}' data-url='../../pages/publicA67810/publicA67810' bindtap="BtnTo">
+        <text class='td1'>{{item.Type}}</text>
+        <text class='td1'>{{item.Material}}</text>
+        <text class='td1'>{{item.Size}}</text> 
+        <text class='td1'>{{item.all}}</text>                
+      </view>      
+    </view>    
+  </view>
+  <view class="tablemain" wx:if="{{page=='aunt'}}"><!--保洁-->  
+    <view class="tablelisttit row">
+      <text class='td1'>保洁</text>
+      <text class='td1'>数量</text>           
+    </view>
+    <view class="tablelistbody">
+      <view wx:for="{{aunt}}" wx:key="{{index}}" class='row' data-id='1' data-name='{{item.name}}' data-possessor_id='{{item.id}}' data-url='../../pages/aunt_cargo/aunt_cargo' bindtap="BtnTo">
+        <text class='td1'>{{item.name}}</text>
+        <text class='td1'>{{item.num}}</text>                       
+      </view>      
+    </view>    
+  </view>
+</view>
+<view class='copytabBar'>
+  <view wx:for="{{copytabBar}}" wx:key="{{index}}" class="{{item.page==page?'active':''}}" bindtap="copytabBar" data-page='{{item.page}}'>
+    <image src="{{item.page==page?item.onimgurl:item.imgurl}}"></image>    
+    <view>{{item.text}}</view>  
+  </view>      
+</view>

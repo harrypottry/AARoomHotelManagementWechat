@@ -1,0 +1,155 @@
+<view wx:if="{{toCoListSelect}}">
+    <scroll-view scroll-x="true" class='scrollClass'>
+        <view class='table'>
+            <view class='table_header'>
+                <view class="th widthPub1">
+                    <view class='centerclass'>时间</view>
+                </view>
+                <block>
+                    <view class='th widthPub2'>
+                        <view>ID</view>
+                    </view>
+                </block>
+                <block>
+                    <view class='th widthPub3'>
+                        <view>名称</view>
+                    </view>
+                </block>
+                <block>
+                    <view class='th widthPub4'>
+                        <view>规格</view>
+                    </view>
+                </block>
+                <block>
+                    <view class='th widthPub5'>
+                        <view>工艺</view>
+                    </view>
+                </block>
+                <block>
+                    <view class='th widthPub6'>
+                        <view>材质</view>
+                    </view>
+                </block>
+                <block>
+                    <view class='th widthPub7'>
+                        <view>密度</view>
+                    </view>
+                </block>
+                <block>
+                    <view class='th widthPub8 borderPub1'>
+                        <view>织纱</view>
+                    </view>
+                </block>
+            </view>
+            <block wx:for="{{itemDataArr}}" wx:key="key" wx:for-item="item">
+                <view class='table_main'>
+                    <view class='td widthPub1'>
+                        <block>
+                            <view>{{item.create_time}}</view>
+                        </block>
+                    </view>
+                    <view class='td widthPub2'>
+                        <block>
+                            <view>{{item.id}}</view>
+                        </block>
+                    </view>
+                    <view class='td widthPub3'>
+                        <block>
+                            <view>{{item.Type}}</view>
+                            <view>{{item.Brand}}</view>
+                        </block>
+                    </view>
+                    <view class='td  widthPub4'>
+                        <block>
+                            {{item.Size}}
+                        </block>
+                    </view>
+                    <view class='td widthPub5'>
+                        <block>
+                            <view>{{item.Craft}}</view>
+                        </block>
+                    </view>
+                    <view class='td widthPub6'>
+                        <block>
+                            <view>{{item.Material}}</view>
+                        </block>
+                    </view>
+                    <view class='td  widthPub7'>
+                        <block>
+                            <view>{{item.Density}}</view>
+                        </block>
+                    </view>
+                    <view class='td  widthPub8 borderPub1'>
+                        <block>
+                            <view>{{item.Woven}}</view>
+                        </block>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </scroll-view>
+    <view class="scanContainer">
+        <view class="sum">合计: {{count}}件</view>
+        <view class="btn yesCo" bindtap="yesCo">确认关联</view>
+        <view class="btn sanNext" bindtap="sanNext">扫一扫关联下一件</view>
+    </view>
+</view>
+<scroll-view scroll-x="true" class='scrollClass' wx:if="{{!toCoListSelect}}">
+    <view class='table'>
+        <view class='table_header'>
+            <view class="th widthPub1">
+                <view>时间</view>
+            </view>
+            <view class='th widthPub2'>
+                <view>ID</view>
+            </view>
+            <view class='th widthPub3'>
+                <view>名称</view>
+            </view>
+            <view class='th widthPub4'>
+                <view>规格</view>
+            </view>
+            <view class='th widthPub5'>
+                <view>工艺</view>
+            </view>
+            <view class='th widthPub6'>
+                <view>材质</view>
+            </view>
+            <view class='th widthPub7'>
+                <view>密度</view>
+            </view>
+            <view class='th widthPub8 borderPub1'>
+                <view>纱织</view>
+            </view>
+        </view>
+        <block wx:for="{{hasCoList}}" wx:key="key" wx:for-item="item">
+            <view class='table_main'>
+                <view class='td widthPub1'>
+                    <view>{{item.update_time}}</view>
+                </view>
+                <view class='td widthPub2'>
+                    <view>{{item.id}}</view>
+                </view>
+                <view class='td widthPub3'>
+                    <view>{{item.Type}}</view>
+                    <view>{{item.Brand}}</view>
+                </view>
+                <view class='td widthPub4'>
+                    <view>{{item.Size}}</view>
+                </view>
+                <view class='td widthPub5'>
+                    <view>{{item.Craft}}</view>
+                </view>
+                <view class='td  widthPub6'>
+                    <view>{{item.Material}}</view>
+                </view>
+                <view class='td  widthPub7'>
+                    <view>{{item.Density}}</view>
+                </view>
+                <view class='td  widthPub8 borderPub1'>
+                    <view>{{item.Woven}}</view>
+                </view>
+            </view>
+        </block>
+    </view>
+</scroll-view>

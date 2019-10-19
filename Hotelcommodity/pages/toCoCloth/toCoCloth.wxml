@@ -1,0 +1,135 @@
+<view class="container" wx:if="{{toCoSelect}}">
+  <!-- 所在仓库 -->
+  <view class="list list-position">
+    <text class="typeTitle">所在仓库</text>
+    <view class="list-msg">
+      <picker bindchange="select" data-num="0" range="{{itemDataDesc.Brand}}" value="{{positionIndex}}">
+        <view class="list-msg2 position-msg">
+          <text>{{itemData.Brand[positionIndex].desc}}</text>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <!-- 名称 -->
+  <view class="list list-name">
+    <text class="typeTitle">名称</text>
+    <view class="list-msg">
+      <picker bindchange="select" data-num="1" range="{{itemDataDesc.Type}}" value="{{nameIndex}}">
+        <view class="list-msg2 position-msg" style="width:460rpx;">
+          <text>{{itemData.Type[nameIndex].desc}}</text>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <!-- 规格 -->
+  <view class="list list-size">
+    <text class="typeTitle">规格</text>
+    <view class="list-msg">
+      <picker bindchange="select" data-num="2" range="{{itemDataDesc.Size}}" value="{{sizeIndex}}">
+        <view class="list-msg2 position-msg" style="width:460rpx;">
+          <text>{{itemData.Size[sizeIndex].desc}}</text>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <!-- 工艺材质 -->
+  <view class="craft-container attrCon1">
+    <view class="list list-attGroup1">
+      <text class="typeTitle">工艺</text>
+      <view class="list-msg">
+        <picker bindchange="select" data-num="3" range="{{itemDataDesc.Craft}}" value="{{craftIndex}}">
+          <view class="list-msg2 position-msg">
+            <text>{{itemData.Craft[craftIndex].desc}}</text>
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="list list-attGroup2">
+      <text class="typeTitle">材质</text>
+      <view class="list-msg">
+        <picker bindchange="select" data-num="4" range="{{itemDataDesc.Material}}" value="{{materialIndex}}">
+          <view class="list-msg2 position-msg">
+            <text>{{itemData.Material[materialIndex].desc}}</text>
+          </view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <!-- 密度织纱 -->
+  <view class="craft-container attrCon2">
+    <view class="list list-attGroup1">
+      <text class="typeTitle">密度</text>
+      <view class="list-msg">
+        <picker bindchange="select" data-num="5" range="{{itemDataDesc.Density}}" value="{{pIndex}}">
+          <view class="list-msg2 position-msg">
+            <text>{{itemData.Density[pIndex].desc}}</text>
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="list list-attGroup2">
+      <text class="typeTitle">织纱</text>
+      <view class="list-msg">
+        <picker bindchange="select" data-num="6" range="{{itemDataDesc.Woven}}" value="{{clothIndex}}">
+          <view class="list-msg2 position-msg">
+            <text>{{itemData.Woven[clothIndex].desc}}</text>
+          </view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <!-- 关联按钮 -->
+  <view class="btn lotToCo" bindtap="toCoCloth">
+    开始批量关联
+  </view>
+</view>
+<view class="container" wx:if="{{!toCoSelect}}">
+  <!-- 所在仓库 -->
+  <view class="list list-position">
+    <text class="typeTitle">所在仓库</text>
+    <view class="list-msg">
+      <picker bindchange="select" data-num="0" range="{{itemDataDesc.Brand}}" value="{{positionIndex}}">
+        <view class="list-msg2 position-msg">
+          <text>{{itemData.Brand[positionIndex].desc}}</text>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <!-- 名称 -->
+  <view class="list list-name">
+    <text class="typeTitle">名称</text>
+    <view class="list-msg">
+      <picker bindchange="select" data-num="1" range="{{itemDataDesc.Type}}" value="{{nameIndex}}">
+        <view class="list-msg2 position-msg" style="width:460rpx;">
+          <text>{{itemData.Type[nameIndex].desc}}</text>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <!-- 规格 -->
+  <view class="list list-size">
+    <text class="typeTitle">规格</text>
+    <view class="list-msg">
+      <picker bindchange="select" data-num="2" range="{{itemDataDesc.Size}}" value="{{sizeIndex}}">
+        <view class="list-msg2 position-msg" style="width:460rpx;">
+          <text>{{itemData.Size[sizeIndex].desc}}</text>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <!-- 时间 -->
+  <view class="list list-time">
+    <text class="typeTitle">时间</text>
+    <view class="list-msg">
+      <picker bindchange="select" data-num="100" range="{{lastedTime}}" value="{{timeStampIndex}}">
+        <view class="list-msg2 position-msg" style="width:460rpx;">
+          <text>{{lastedTime[timeStampIndex]}}</text>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <!-- 关联按钮 -->
+  <view class="btn lotToCo" bindtap="hasCoQuery">
+    查询
+  </view>
+</view>

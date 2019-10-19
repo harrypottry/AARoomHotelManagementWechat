@@ -1,0 +1,69 @@
+.task-container {
+    height: 100%;
+    padding: 0 3%;
+}
+
+.title {
+    margin-top: 30rpx;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title text {
+    flex: 1;
+    text-align: center;
+}
+
+.taskList {
+    display: flex;
+    flex-direction: column;
+}
+
+.taskList label {
+    margin-bottom: 10rpx;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #666666;
+}
+label view{
+    flex: 1;
+    display: inline-block;
+    text-align: center;
+}
+.checkbox text {
+    line-height: 3;
+}
+
+.checkbox checkbox {
+    margin: 0;
+    padding: 0;
+    padding-top: 20rpx;
+}
+
+.checkbox .apartAttibute1 {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox .apartAttibute2 {
+    padding-top: 22rpx;
+    background-color: #fff;
+    text-align: center;
+}
+
+.getClothGrassBtn {
+    background-color: #54C947;
+    width: 50%;
+    margin: 300rpx auto;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    border: 0px;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+}

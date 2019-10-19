@@ -1,0 +1,15 @@
+.login-input{
+	padding: 17px 0;
+	padding-left: 15px;	
+	position: relative;
+	display: flex;
+  border-bottom:1px solid #EFEFEF;
+}
+.login-input label{
+	width:56px; 
+  display: inline-block;  
+  font-size:15px;
+  box-sizing: border-box;
+  height:28px;
+  line-height: 24px;  
+}

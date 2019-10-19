@@ -1,0 +1,29 @@
+<view class="pagename">    
+  <text>设置报损信息</text>      
+</view>
+<view class='main'> 
+  <view class="linenmains">
+    <text>手动输入ID（丢失或二维码失效时使用）</text>
+    <input placeholder="单行输入" bindinput="voteNums" value="{{cloth_id}}" class="input"/>
+  </view>
+  <view class="linenmains">
+    <text>扫码报损</text>
+    <button class="btn reimburse" bindtap="scandbs">扫一扫报损</button>
+  </view>
+  <view class="linenmains">
+    <text>设置报损类型</text>
+    <view class="section">
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{arr}}" range-key="{{'name'}}">
+        <view class="picker">{{arr_name}}<image src="../../images/down.png" class="downimage"></image></view>
+      </picker>      
+  </view>
+  </view>
+  <view class="remarksinfo">
+    <text>备注：</text>
+    <textarea placeholder="请输入丢失或损坏责任人、输入处理结果" bindinput="bindinput" class="tarea">
+    </textarea>
+  </view>
+</view>
+<view class="btnmtmain">
+ <button class="btn" bindtap="confirm_lose">确认丢失</button>
+</view>

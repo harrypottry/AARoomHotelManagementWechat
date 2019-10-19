@@ -1,0 +1,20 @@
+  <view class="pagename">    
+    历史任务列表       
+  </view>
+  <view class="tablemain">
+    <view class="tablelisttit row">
+      <text class='td2'>任务属性</text>
+      <text class='td2'>完成任务时间</text>
+      <text class='td1'>房间</text>
+    </view>
+    <view class="tablelistbody">
+      <view wx:for="{{history}}" wx:key="{{index}}" class='row'>
+        <text class='td2'>{{item.desc}}</text>
+        <text class='td2'>{{item.update_time}}</text>
+        <text class='td1'>{{item.room_name.room_name}}</text>        
+      </view>
+      <view class='more' wx:if="{{pageNo!=more&&more!='0'}}" bindtap="btnmore">加载更多...</view>
+      <view class='more' wx:if="{{more=='0'}}">未加载到数据...</view>
+    </view>    
+  </view>
+

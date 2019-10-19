@@ -1,0 +1,101 @@
+.table {
+    display: inline-flex;
+    flex-direction: column;
+    border: 1rpx solid rgba(218, 217, 217, 1);
+    border-bottom: 0;
+  }
+  
+  .scrollClass {
+    display: flex;
+    width: 100%;
+    white-space: nowrap;
+    margin: 20rpx 10rpx 0;
+    height: 100%;
+    background-color: white;
+    font-size: 26rpx;
+  }
+  
+  .table_header {
+    display: inline-flex;
+  }
+  
+  .th {
+    display: flex;
+    flex-direction: column;
+    height: 80rpx;
+    border-right: 1rpx solid rgba(218, 217, 217, 1);
+    border-bottom: 1rpx solid rgba(218, 217, 217, 1);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .table_main {
+    display: inline-flex;
+    flex-direction: row;
+    text-align: center;
+  }
+  
+  .td {
+    height: 70rpx;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    border: 1rpx solid rgba(218, 217, 217, 1);
+    border-top: 0;
+    border-left: 0;
+  }
+  
+  .widthPub1 {
+    width: 250rpx;
+  }
+  
+  .widthPub2 {
+    width: 200rpx;
+  }
+  
+  .widthPub3 {
+    width: 140rpx;
+  }
+  
+  .widthPub4 {
+    width: 150rpx;
+  }
+  
+  .widthPub5 {
+    width: 150rpx;
+  }
+  
+  .widthPub6 {
+    width: 120rpx;
+  }
+  
+  .widthPub7 {
+    width: 180rpx;
+  }
+  .widthPub8 {
+    width: 180rpx;
+  }
+  .borderPub1 {
+    border-right: 0;
+  }
+  .scanContainer{
+    display: flex;
+  }
+  .sum{
+    margin-top:50px;
+    width:120rpx;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .yesCo{
+    width:120rpx;
+    font-size: 20rpx;
+  }
+  .sanNext{
+    width:200rpx;
+    font-size: 20rpx;
+  }

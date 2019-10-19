@@ -1,0 +1,38 @@
+<view class="pagename">    
+  <text>{{pagetext}}</text>
+  <button class="ringout" bindtap="onoff">下班盘点</button>       
+</view>
+<view class='main'>
+  <view wx:if="{{page=='task_list'}}">
+    <view class="tablemain">
+      <view class="row">
+        <text class="td1">房间</text>
+        <text class="td1">房间属性</text>
+        <text class="td2">任务属性</text>
+        <text class="td1">任务状态</text>
+      </view>
+      <view class="tablelistbody">
+        <view class="tablelist row" hover-class='is_checked' data-room_type_id="{{item.room_type_id}}" bindtap="starttask" wx:for="{{aroundData}}" wx:key="{{index}}" data-id="{{item.id}}" data-room_id="{{item.room_id}}" data-room_name="{{item.room_name}}" data-mission_desc="{{item.mission_desc}}" data-status="{{item.status}}">
+          <text class='td1'>{{item.room_name}}</text>
+          <text class='td1'>{{item.room_desc}}</text>
+          <text class='td2'>{{item.mission_desc}}</text>
+          <text class='td1 blue'><text wx-if='{{item.status==0}}'>开始任务</text><text wx-if='{{item.status==1}}'>进行中</text><text wx-if='{{item.status==2}}'>完成</text></text>          
+        </view>
+      </view>    
+    </view>
+  </view>
+  <view wx:if="{{page=='chooseClothGrass'}}">
+      <view>
+          <button class="btn" data-url='../../pages/todayTaskList/todayTaskList' bindtap="BtnTo">领取仓库布草</button>
+      </view>
+      <view>
+          <button class="btn" data-url='../../pages/checkClothGrassList/checkClothGrass' bindtap="BtnTo">查看我的布草</button>
+      </view>
+  </view>
+</view>
+<view class='copytabBar'>
+  <view wx:for="{{copytabBar}}" wx:key="{{index}}" class="{{item.page==page?'active':''}}" bindtap="copytabBar" data-page='{{item.page}}' data-pagetext='{{item.pagetext}}'>
+    <image src="{{item.page==page?item.onimgurl:item.imgurl}}"></image>    
+    <view>{{item.text}}</view>  
+  </view>      
+</view>

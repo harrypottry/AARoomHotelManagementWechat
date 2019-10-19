@@ -1,0 +1,34 @@
+<!--pages/room_update/room_update.wxml-->
+<view class="roomupdatemain">
+  <view class="roomswrapper">
+    <text class="roomnums">{{room_name}}房间</text>
+    <text class="taskinfo">{{mission_desc}}</text>
+  </view>
+  <view class="roomupdate_detail">
+    <view class="update_detailtitle"><text>布草</text></view>
+    <view class="update_detailmain">
+      <view class="update_detaillist" wx:for="{{roomData}}" wx:key="{{index}}">
+        <text>{{item.Type}}：{{item.Material}} {{item.Size}}</text>
+        <text class="right">{{item.num}}条</text>
+      </view>      
+    </view>
+    <!-- <view class="update_detailmain">
+      <view class="update_detaillist" wx:for="{{roomData}}" wx:key="{{index}}">
+        <text>{{item.clothTypeList[index].desc}}</text>
+        <text class="right">{{item.num}}条</text>
+      </view>
+    </view> -->
+  </view>
+  <view class="roomupdate_detail">
+    <view class="update_detailtitle"><text>消耗品</text></view>
+    <view class="update_detailmain">
+      <view class="update_detaillisttwo" wx:for="{{consumeData}}" wx:key="{{index}}">
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+  <view>
+    <text class="taskfinish" wx-if="{{status == 2}}">任务已完成</text>
+    <button class="btn" bindtap='scancode' wx-if="{{status == 0}}">扫一扫开始任务</button>
+  </view>
+</view>

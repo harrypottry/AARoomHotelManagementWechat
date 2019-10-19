@@ -1,0 +1,44 @@
+
+<view class="consumablesmain">
+  <view class="roomswrapper">
+    <text class="roomnums">{{room_name}}房间</text>
+    <text class="taskinfo">{{mission_desc}}</text>
+  </view>
+  <view class="allocationdetail">
+    <view class="detailtitle">
+      <text class="titnums">2</text>
+      <text class="linentitword">消耗品配置</text>
+    </view>
+  </view>
+  <!---->
+  <view class="consumtable">
+    <view class="consumtabletit">
+      <text>名称</text>
+      <text>消耗数量</text>
+      <text>名称</text>
+      <text>消耗数量</text>
+    </view>
+    <view class="consumtablebody">
+      <view class="c_tablebodylist" wx:for="{{consumeData}}" wx:key="{{index}}">
+        <text>{{item.name}}</text>
+        <input type="number" class="input" confirm-type="next" bindinput="voteNums" placeholder='0' data-index="{{index}}" />
+      </view>
+    </view>
+  </view>
+<!---->
+  <!-- <view class="consumtable">
+    <view class="consumtabletit">
+      <text>名称</text>
+      <text>消耗数量</text>
+    </view>
+      <view class="c_tablebodylist">
+        <text>杯垫</text>
+        <input type="number" class="input" />
+      </view>
+    </view>
+  </view> -->
+
+  <view>
+    <button class="btn" bindtap='complete'>完成任务</button>
+  </view>
+</view>

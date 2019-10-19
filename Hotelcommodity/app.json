@@ -1,0 +1,29 @@
+{
+  "pages":[
+    "pages/main/main",
+    "pages/index/index",
+    "pages/attendant/attendant",    
+    "pages/checkClothGrassList/checkClothGrass",    
+    "pages/todayTaskList/todayTaskList",
+    "pages/hasGetClothGrassList/hasGetClothGrassList",    
+    "pages/room_update/room_update",
+    "pages/linen_allocation/linen_allocation",
+    "pages/consumables/consumables",
+    "pages/history_mission/history_mission",
+    "pages/toCoCloth/toCoCloth",
+    "pages/toCoClothList/toCoClothList",
+    "pages/stockControl/stockControl",
+    "pages/refer/refer",
+    "pages/publicA134/publicA134",
+    "pages/breakage/breakage",
+    "pages/breakageing/breakageing",
+    "pages/publicA67810/publicA67810",
+    "pages/aunt_cargo/aunt_cargo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#54C947",
+    "navigationBarTitleText": "布草管理",
+    "navigationBarTextStyle": "lack"
+  }  
+}
